@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aviso legal, privacidad y términos de uso — Zentro Consulting</title>
   <meta name="description" content="Aviso legal, política de privacidad, política de cookies y términos de uso del sitio web de Zentro Consulting LLC.">
-  <link rel="canonical" href="https://zentroconsulting.net/legal.html">
+  <link rel="canonical" href="https://zentroconsulting.net/legal">
+  <link rel="alternate" hreflang="es" href="https://zentroconsulting.net/legal">
+  <link rel="alternate" hreflang="en" href="https://zentroconsulting.net/legal-en">
+  <link rel="alternate" hreflang="x-default" href="https://zentroconsulting.net/legal">
+  <script>(function(){try{var L='es',ALT='/legal-en';if(/bot|crawl|spider|slurp|bingpreview|lighthouse|pagespeed/i.test(navigator.userAgent)||navigator.webdriver)return;var m=document.cookie.match(/(?:^|; )lang=([^;]*)/),p=m?m[1]:null;if(p&&p!==L&&(p==='es'||p==='en')){location.replace(ALT);return;}if(!p&&L==='es'&&/^en/i.test(navigator.language||'')){location.replace(ALT);}}catch(e){}})();</script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230F1E3A' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%230F1E3A' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%231E4FD6'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +43,9 @@
     .brand svg { width: 26px; height: 26px; }
     .btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 6px; font-weight: 600; font-size: 0.925rem; text-decoration: none; background: var(--accent); color: var(--white); transition: background-color .15s ease; }
     .btn:hover { background: var(--accent-ink); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .lang { display: inline-flex; align-items: center; justify-content: center; min-width: 42px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 6px; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.04em; text-decoration: none; color: var(--ink-2); background: var(--white); }
+    .lang:hover { color: var(--ink); border-color: var(--ink-2); }
 
     .legal { padding: 72px 0 96px; }
     .legal .wrap { max-width: 760px; }
@@ -78,11 +85,14 @@
 
   <header class="nav">
     <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Zentro Consulting, inicio">
+      <a class="brand" href="/" aria-label="Zentro Consulting, inicio">
         <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="5" fill="#1E4FD6"/></svg>
         zentro
       </a>
-      <a class="btn" href="mailto:info@zentroconsulting.es?subject=Consulta%20desde%20zentroconsulting.net">Contacto</a>
+      <div class="nav-actions">
+        <a class="btn" href="mailto:info@zentroconsulting.es?subject=Consulta%20desde%20zentroconsulting.net">Contacto</a>
+        <a class="lang" href="/legal-en" data-setlang="en" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      </div>
     </div>
   </header>
 
@@ -139,6 +149,7 @@
         <ul>
           <li><strong>Datos de contacto y de tu consulta.</strong> Cuando nos escribes por correo electrónico (por ejemplo, a través del botón de contacto del Sitio), tratamos tu nombre, tu dirección de correo, tu empresa si la indicas y el contenido de tu mensaje. Estos datos nos los facilitas tú directamente.</li>
           <li><strong>Datos técnicos de navegación.</strong> El Sitio se aloja en la infraestructura de Vercel Inc. (Estados Unidos). Como cualquier servidor web, Vercel registra automáticamente datos técnicos de las conexiones (dirección IP, tipo de navegador y dispositivo, fecha y hora, páginas solicitadas) con fines de prestación del servicio y seguridad. Zentro Consulting LLC no combina estos datos con tu identidad.</li>
+          <li><strong>Preferencia de idioma.</strong> Si usas el selector de idioma, guardamos tu elección en una cookie técnica en tu dispositivo. No la asociamos a tu identidad. Más detalles en la política de cookies.</li>
           <li><strong>Fuentes tipográficas.</strong> El Sitio carga sus fuentes desde el servicio Google Fonts (Google LLC). Al mostrar la página, tu navegador se conecta a los servidores de Google y les transmite tu dirección IP. Google no instala cookies a través de este servicio. Puedes consultar más información en la política de privacidad de Google.</li>
         </ul>
 
@@ -175,9 +186,10 @@
 
       <section id="cookies">
         <h2>3. Política de cookies</h2>
-        <p>Este Sitio <strong>no utiliza cookies</strong> ni tecnologías similares de seguimiento, ni propias ni de terceros: no hay herramientas de analítica, publicidad ni personalización. Por ese motivo no mostramos un banner de consentimiento.</p>
-        <p>El único servicio externo que se carga es Google Fonts, que no instala cookies en tu dispositivo.</p>
-        <p>Si en el futuro incorporamos cookies (por ejemplo, para medir visitas), actualizaremos esta política y, cuando la ley lo exija, solicitaremos tu consentimiento antes de instalarlas. En cualquier caso, puedes configurar tu navegador para bloquear o eliminar cookies en cualquier momento.</p>
+        <p>Este Sitio utiliza una única cookie, propia y técnica, llamada <strong>lang</strong>. Se instala únicamente cuando eliges un idioma con el selector de la web y sirve para mostrarte esa versión en tus siguientes visitas. Caduca a los 12 meses, no contiene datos personales y no se usa para identificarte ni para hacer seguimiento. Al ser necesaria para prestar un servicio que has solicitado expresamente, está exenta de consentimiento.</p>
+        <p>En tu primera visita, el Sitio también comprueba el idioma configurado en tu navegador para mostrarte la versión en español o en inglés. Esta comprobación se realiza en tu propio dispositivo y no almacena nada.</p>
+        <p>No utilizamos cookies de analítica, publicidad ni de terceros, y por eso no mostramos un banner de consentimiento. El único servicio externo que se carga es Google Fonts, que no instala cookies en tu dispositivo.</p>
+        <p>Si en el futuro incorporamos otras cookies (por ejemplo, para medir visitas), actualizaremos esta política y, cuando la ley lo exija, solicitaremos tu consentimiento antes de instalarlas. En cualquier caso, puedes bloquear o eliminar cookies desde la configuración de tu navegador; si eliminas la cookie <strong>lang</strong>, la web volverá a detectar el idioma de tu navegador.</p>
       </section>
 
       <section id="terminos">
@@ -214,7 +226,7 @@
         <p>Para cualquier cuestión relacionada con estos textos legales, escríbenos a <a href="mailto:info@zentroconsulting.es">info@zentroconsulting.es</a>.</p>
       </section>
 
-      <a class="back" href="index.html">← Volver al inicio</a>
+      <a class="back" href="/">← Volver al inicio</a>
     </div>
   </main>
 
@@ -222,14 +234,16 @@
     <div class="wrap">
       <span>© 2026 Zentro Consulting LLC · Consultoría de marketing</span>
       <nav class="legal-links" aria-label="Legal">
-        <a href="legal.html#aviso-legal">Aviso legal</a>
-        <a href="legal.html#privacidad">Privacidad</a>
-        <a href="legal.html#cookies">Cookies</a>
-        <a href="legal.html#terminos">Términos de uso</a>
+        <a href="/legal#aviso-legal">Aviso legal</a>
+        <a href="/legal#privacidad">Privacidad</a>
+        <a href="/legal#cookies">Cookies</a>
+        <a href="/legal#terminos">Términos de uso</a>
+        <a href="/legal-en" data-setlang="en" lang="en" hreflang="en">English version</a>
       </nav>
       <a href="mailto:info@zentroconsulting.es">info@zentroconsulting.es</a>
     </div>
   </footer>
 
+  <script>document.querySelectorAll('[data-setlang]').forEach(function(a){a.addEventListener('click',function(){document.cookie='lang='+a.getAttribute('data-setlang')+'; max-age=31536000; path=/; SameSite=Lax';});});</script>
 </body>
 </html>
