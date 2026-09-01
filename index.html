@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zentro Consulting — Consultoría de marketing para empresas que quieren crecer con método</title>
+  <meta name="description" content="Zentro Consulting LLC asesora a empresas en estrategia de marketing, captación de clientes, branding y optimización del marketing digital. Diagnóstico honesto, plan concreto y acompañamiento en la ejecución.">
+  <link rel="canonical" href="https://zentroconsulting.net/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zentro Consulting">
+  <meta property="og:title" content="Zentro Consulting — Marketing que se mide en clientes">
+  <meta property="og:description" content="Estrategia, captación de clientes, branding y optimización del marketing digital para empresas que ya venden y quieren crecer con método.">
+  <meta property="og:url" content="https://zentroconsulting.net/">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%230F1E3A' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%230F1E3A' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%231E4FD6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0F1E3A;
+      --ink-2: #4E586A;
+      --paper: #F3F4F0;
+      --paper-2: #E9EBE4;
+      --line: #D3D7CE;
+      --accent: #1E4FD6;
+      --accent-ink: #163CA6;
+      --white: #FFFFFF;
+      --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+      --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+      --w: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      font-family: var(--body);
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+    .wrap { width: min(var(--w), calc(100% - 48px)); margin: 0 auto; }
+    h1, h2, h3 { font-family: var(--display); margin: 0; }
+    p { margin: 0; }
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    /* Nav */
+    .nav { border-bottom: 1px solid var(--line); background: var(--paper); }
+    .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; }
+    .brand svg { width: 26px; height: 26px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; font-weight: 500; font-size: 0.95rem; }
+    .nav-links a { text-decoration: none; color: var(--ink-2); }
+    .nav-links a:hover { color: var(--ink); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 6px; font-family: var(--body); font-weight: 600; font-size: 1rem; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background-color .15s ease, border-color .15s ease; }
+    .btn-primary { background: var(--accent); color: var(--white); }
+    .btn-primary:hover { background: var(--accent-ink); }
+    .btn-light { background: var(--white); color: var(--ink); }
+    .btn-light:hover { background: var(--paper-2); }
+    .btn-sm { padding: 10px 16px; font-size: 0.925rem; }
+    .link { font-weight: 600; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+    .link:hover { color: var(--accent-ink); }
+
+    /* Hero */
+    .hero { padding: 88px 0 72px; }
+    .hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+    .hero h1 { font-size: clamp(2.5rem, 5.4vw, 4.4rem); font-weight: 700; line-height: 1.02; letter-spacing: -0.025em; max-width: 12ch; }
+    .hero .lede { margin-top: 28px; font-size: 1.2rem; line-height: 1.55; color: var(--ink-2); max-width: 46ch; }
+    .hero .actions { margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+    .hero .proof { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.975rem; color: var(--ink-2); max-width: 52ch; }
+    .rings { width: 100%; max-width: 440px; margin: 0 auto; display: block; }
+
+    /* Sections */
+    section { padding: 96px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    .section-head { max-width: 62ch; margin-bottom: 56px; }
+    .section-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+    .section-head p { margin-top: 16px; font-size: 1.1rem; color: var(--ink-2); }
+
+    /* Servicios */
+    .services { display: grid; grid-template-columns: 1fr 1fr; gap: 56px 64px; }
+    .service h3 { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2; }
+    .service .mark { width: 34px; height: 34px; margin-bottom: 18px; display: block; }
+    .service p { margin-top: 12px; color: var(--ink-2); max-width: 44ch; }
+    .service ul { margin-top: 18px; display: grid; gap: 8px; }
+    .service li { position: relative; padding-left: 20px; font-size: 0.975rem; }
+    .service li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--accent); }
+
+    /* Método */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+    .step .num { font-family: var(--display); font-weight: 300; font-size: 4rem; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+    .step h3 { margin-top: 14px; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.015em; }
+    .step p { margin-top: 10px; color: var(--ink-2); }
+
+    /* Para quién + principios */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+    .principles { display: grid; gap: 28px; }
+    .principle h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
+    .principle p { margin-top: 6px; color: var(--ink-2); }
+    .who p + p { margin-top: 16px; }
+    .who .big { font-family: var(--display); font-weight: 500; font-size: 1.5rem; line-height: 1.3; letter-spacing: -0.015em; color: var(--ink); }
+
+    /* CTA */
+    .cta { background: var(--ink); color: var(--white); border-top: 0; }
+    .cta .wrap { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center; }
+    .cta h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.05; }
+    .cta p { margin-top: 18px; font-size: 1.15rem; color: #C9D1E3; max-width: 48ch; }
+    .cta .actions { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+    .cta .actions small { color: #9AA6C2; font-size: 0.925rem; }
+
+    /* Footer */
+    footer { padding: 40px 0; border-top: 1px solid var(--line); font-size: 0.925rem; color: var(--ink-2); }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; }
+    footer a { text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero { padding: 56px 0 48px; }
+      .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
+      .hero h1 { max-width: 14ch; }
+      .rings { max-width: 300px; }
+      section { padding: 72px 0; }
+      .services, .steps, .split, .cta .wrap { grid-template-columns: 1fr; }
+      .services { gap: 44px; }
+      .steps { gap: 36px; }
+      .split { gap: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#" aria-label="Zentro Consulting, inicio">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="15" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="5" fill="#1E4FD6"/></svg>
+        zentro
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Método</a>
+        <a href="#quienes">Para quién</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="https://calendly.com/zentroconsulting" target="_blank" rel="noopener">Agendar llamada</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Marketing que se mide en clientes, no en impresiones.</h1>
+          <p class="lede">Zentro Consulting asesora a empresas en estrategia de marketing, captación de clientes, branding y optimización del marketing digital. Diagnóstico honesto, plan concreto y acompañamiento en la ejecución.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://calendly.com/zentroconsulting" target="_blank" rel="noopener">Agendar una llamada</a>
+            <a class="link" href="#servicios">Ver servicios</a>
+          </div>
+          <p class="proof">Operamos nuestras propias marcas de e-commerce en España y Latinoamérica. Lo que recomendamos es lo que hacemos cada día con nuestro propio presupuesto.</p>
+        </div>
+        <svg class="rings" viewBox="0 0 440 440" role="img" aria-label="Anillos concéntricos que convergen en un punto central">
+          <g fill="none" stroke="#0F1E3A" stroke-width="1.5">
+            <circle cx="220" cy="220" r="210" stroke-opacity="0.18"/>
+            <circle cx="220" cy="220" r="168" stroke-opacity="0.32"/>
+            <circle cx="220" cy="220" r="126" stroke-opacity="0.5"/>
+            <circle cx="220" cy="220" r="84" stroke-opacity="0.72"/>
+            <circle cx="220" cy="220" r="42" stroke-opacity="1"/>
+          </g>
+          <g stroke="#0F1E3A" stroke-width="1.5" stroke-opacity="0.35">
+            <line x1="220" y1="4" x2="220" y2="28"/>
+            <line x1="220" y1="412" x2="220" y2="436"/>
+            <line x1="4" y1="220" x2="28" y2="220"/>
+            <line x1="412" y1="220" x2="436" y2="220"/>
+          </g>
+          <circle cx="220" cy="220" r="11" fill="#1E4FD6"/>
+        </svg>
+      </div>
+    </div>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Qué hacemos</h2>
+          <p>Cuatro áreas de trabajo. Puedes contratar una sola o un acompañamiento completo, según dónde esté hoy el cuello de botella de tu negocio.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#0F1E3A" stroke-width="1.5"/><circle cx="17" cy="17" r="3.5" fill="#1E4FD6"/></svg>
+            <h3>Estrategia de marketing</h3>
+            <p>Definimos dónde competir, con qué oferta y con qué prioridades. Sales con un plan trimestral que tu equipo puede ejecutar.</p>
+            <ul>
+              <li>Auditoría de la situación actual y de la competencia</li>
+              <li>Posicionamiento, oferta y propuesta de valor</li>
+              <li>Plan de canales, objetivos y presupuesto</li>
+            </ul>
+          </article>
+          <article class="service">
+            <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#0F1E3A" stroke-width="1.5"/><circle cx="17" cy="17" r="9" fill="none" stroke="#0F1E3A" stroke-width="1.5"/><circle cx="17" cy="17" r="3.5" fill="#1E4FD6"/></svg>
+            <h3>Captación de clientes</h3>
+            <p>Diseñamos y optimizamos el sistema de adquisición: publicidad de pago, embudos, páginas de venta y medición de resultados.</p>
+            <ul>
+              <li>Meta Ads y Google Ads: estructura, creatividades y pujas</li>
+              <li>Embudos, landing pages y ofertas de entrada</li>
+              <li>Medición: coste por cliente, atribución y reporting</li>
+            </ul>
+          </article>
+          <article class="service">
+            <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#0F1E3A" stroke-width="1.5"/><circle cx="17" cy="17" r="15" fill="none" stroke="#0F1E3A" stroke-width="1.5" stroke-dasharray="4 5"/><circle cx="17" cy="17" r="3.5" fill="#1E4FD6"/></svg>
+            <h3>Branding</h3>
+            <p>Construimos una marca que se entiende en segundos y se mantiene coherente en cada punto de contacto, del anuncio al packaging.</p>
+            <ul>
+              <li>Propuesta de valor, mensajes clave y tono</li>
+              <li>Identidad visual y sistema de marca</li>
+              <li>Guía de marca para equipo, agencias y proveedores</li>
+            </ul>
+          </article>
+          <article class="service">
+            <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#0F1E3A" stroke-width="1.5"/><path d="M17 2a15 15 0 0 1 15 15" fill="none" stroke="#1E4FD6" stroke-width="3" stroke-linecap="round"/><circle cx="17" cy="17" r="3.5" fill="#1E4FD6"/></svg>
+            <h3>Optimización del marketing digital</h3>
+            <p>Revisamos lo que ya tienes en marcha y lo hacemos rendir más: conversión, email, retención y automatizaciones.</p>
+            <ul>
+              <li>CRO en web, fichas de producto y checkout</li>
+              <li>Email y SMS: flujos automáticos y campañas</li>
+              <li>Retención, recompra y automatización de procesos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodo">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Cómo trabajamos</h2>
+          <p>Tres fases, siempre en este orden. Antes de recomendar nada, entendemos el negocio.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="num" aria-hidden="true">1</div>
+            <h3>Diagnóstico</h3>
+            <p>Una llamada inicial y un análisis de tus datos, canales y competencia. Te decimos con claridad dónde está la oportunidad y qué no merece la pena tocar.</p>
+          </div>
+          <div class="step">
+            <div class="num" aria-hidden="true">2</div>
+            <h3>Plan</h3>
+            <p>Un plan de acción priorizado, con objetivos medibles, responsables y un presupuesto realista para los próximos 90 días.</p>
+          </div>
+          <div class="step">
+            <div class="num" aria-hidden="true">3</div>
+            <h3>Ejecución y seguimiento</h3>
+            <p>Acompañamos a tu equipo en la implementación y revisamos resultados cada semana. Lo que funciona se escala; lo que no, se corta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quienes">
+      <div class="wrap">
+        <div class="split">
+          <div class="who">
+            <h2 class="big">Trabajamos con empresas que ya venden y quieren crecer con método.</h2>
+            <p style="margin-top:20px;color:var(--ink-2)">Tiendas online y marcas de consumo, negocios de servicios y equipos de marketing que necesitan un criterio externo para tomar mejores decisiones. Con experiencia en España, México y el resto de Latinoamérica.</p>
+            <p style="color:var(--ink-2)">Si todavía no tienes ventas, probablemente no seamos la mejor opción para ti; te lo diremos en la primera llamada.</p>
+          </div>
+          <div class="principles">
+            <div class="principle">
+              <h3>Criterio, no plantillas</h3>
+              <p>Cada negocio tiene su margen, su cliente y su momento. Las recetas genéricas se pagan caras.</p>
+            </div>
+            <div class="principle">
+              <h3>Números antes que opiniones</h3>
+              <p>Decidimos con datos: coste por cliente, margen de contribución y retención. Si no se puede medir, no lo recomendamos.</p>
+            </div>
+            <div class="principle">
+              <h3>Piel en el juego</h3>
+              <p>Invertimos nuestro propio presupuesto en nuestras marcas. Sabemos lo que cuesta cada euro mal gastado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="wrap">
+        <div>
+          <h2>¿Hablamos de tu negocio?</h2>
+          <p>Agenda una llamada de diagnóstico de 30 minutos. Sin compromiso: saldrás con una lectura clara de dónde está tu oportunidad y cómo abordarla.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-light" href="https://calendly.com/zentroconsulting" target="_blank" rel="noopener">Agendar llamada de diagnóstico</a>
+          <small>Elige el hueco que mejor te venga. Respondemos en menos de 24 horas laborables.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Zentro Consulting LLC · Consultoría de marketing</span>
+      <a href="mailto:hola@zentroconsulting.net">hola@zentroconsulting.net</a>
+    </div>
+  </footer>
+
+</body>
+</html>
